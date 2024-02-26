@@ -134,7 +134,6 @@ export default {
           this.products = res.data.products
           this.pagination = res.data.pagination
           this.isLoading = false
-          // console.log(res.data)
           this.pushMessage({
             style: 'success',
             title: '成功取得產品資訊',

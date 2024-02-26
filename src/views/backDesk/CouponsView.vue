@@ -112,7 +112,6 @@ export default {
           this.isLoading = false
           this.coupons = res.data.coupons
           this.pagination = res.data.pagination
-          console.log(res.data)
           this.pushMessage({
             style: 'success',
             title: '取得優惠卷資料',
@@ -120,7 +119,6 @@ export default {
           })
         })
         .catch((err) => {
-          console.log(err.response)
           this.isLoading = false
           this.pushMessage({
             style: 'danger',

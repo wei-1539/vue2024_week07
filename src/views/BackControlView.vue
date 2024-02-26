@@ -29,7 +29,6 @@ export default {
       const api = `${VITE_URL}api/user/check`
       axios.post(api)
         .then((res) => {
-          // console.log(res, '成功')
           this.pushMessage({
             style: 'success',
             title: '登入成功',
@@ -38,7 +37,6 @@ export default {
           this.status = true
         })
         .catch((err) => {
-          // console.log(err, '失敗')
           this.pushMessage({
             style: 'danger',
             title: '錯誤訊息',
